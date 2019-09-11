@@ -1,0 +1,20 @@
+{
+  "name": "evaluation-library",
+  "version": "0.0.1",
+  "description": "Definition of all models used in the evaluation project",
+  "main": "index.ts",
+  "author": "Herbert Hart",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && tsc -p . && sudo cp -f package.json dist/package.json",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist",
+    "release": "chmod +x release.sh && $prompt ./release.sh"
+  },
+  "dependencies": {},
+  "repository": "https://github.com/PJS-Cube/evaluation-library.git",
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
+}
