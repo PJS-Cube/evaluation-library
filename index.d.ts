@@ -10,3 +10,4 @@ export { IPersonToContact } from "./lib/models/person.to.contact";
 export { IPerson } from "./lib/models/person";
 export { IRepresentativeDetails } from "./lib/models/representative.details";
 export { IRepresentative } from "./lib/models/representative";
+export { IUser } from './lib/models/user';
