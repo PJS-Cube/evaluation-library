@@ -9,6 +9,7 @@ export interface IOfferDocument {
   NotReceived?: boolean;
   DeadLine?: Date;
   HandOut?: Date;
+  HandOutKind?: number; // todo create enum
   WorkingStatus?: number; // todo create Enum
   // RefusalReason?: any; // is ref
   // SiteManager?: any; // is ref

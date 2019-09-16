@@ -8,5 +8,6 @@ export interface IOfferDocument {
     NotReceived?: boolean;
     DeadLine?: Date;
     HandOut?: Date;
+    HandOutKind?: number;
     WorkingStatus?: number;
 }
