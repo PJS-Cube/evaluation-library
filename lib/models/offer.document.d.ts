@@ -3,4 +3,10 @@ export interface IOfferDocument {
     Oid?: string;
     OfferStatus?: boolean;
     BaseDocumentSales?: IBaseDocumentSales;
+    ChanceForOrder?: boolean;
+    ValidUntil?: Date;
+    NotReceived?: boolean;
+    DeadLine?: Date;
+    HandOut?: Date;
+    WorkingStatus?: number;
 }
