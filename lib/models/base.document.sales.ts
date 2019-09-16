@@ -19,6 +19,7 @@ export interface IBaseDocumentSales {
   TotalHours?: number;
   // PaymentTerms?: any; // is ref
   Representative?: IRepresentative; // BelongsTo [THIS].[Representative] -> [Contact].[Oid]
+  Representatives?: IRepresentative[]; // HasMany [Representative].[BaseDocumentSales] -> [THIS].[Oid]
   DeliveryAddressID?: string;
   // Zone?: any; // is ref
   // BillingKind?: any; // is ref
