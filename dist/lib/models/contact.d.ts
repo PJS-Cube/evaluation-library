@@ -4,7 +4,8 @@ import { ICustomerDetails } from "./customer.details";
 import { IRepresentativeDetails } from "./representative.details";
 import { IIndustry } from "./industry";
 import { IRepresentative } from "./representative";
-export interface IContact {
+import { BaseInterface } from "./base.interface";
+export interface IContact extends BaseInterface {
     Oid?: string;
     Person?: IPerson;
     CustomerDetails?: ICustomerDetails;
