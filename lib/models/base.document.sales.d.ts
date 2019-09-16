@@ -1,10 +1,38 @@
 import { IBaseDocument } from "./base.document";
 import { IClient } from "./client";
+import { IUser } from "./user";
+import { IRepresentative } from "./representative";
 export interface IBaseDocumentSales {
     Oid?: string;
     CashDiscountBase?: number;
+    CashDiscountDays?: number;
+    CashDiscount?: number;
+    CasDiscountDays2?: number;
+    CashDiscount2?: number;
+    CashDiscountNetDays?: number;
+    PurchaseAmount?: number;
+    Margin?: number;
     TotalWage?: number;
     TotalOther?: number;
+    TotalHours?: number;
+    Representative?: IRepresentative;
+    DeliveryAddressID?: string;
+    CostCenterExternal?: string;
+    CalculationKind?: number;
+    DocumentKind?: number;
+    IsProtected?: boolean;
+    SubDocumentID?: string;
+    YourReference?: string;
+    YourOrderNumber?: string;
+    YourOrderDate?: Date;
+    UGLExportStatus?: number;
+    UGLExternID?: string;
+    EDIDesiredDeliveryDate?: Date;
+    Bauvorhaben?: string;
+    Promoter?: IRepresentative;
+    Seller?: IRepresentative;
+    IsProtectedBy?: IUser;
     BaseDocument?: IBaseDocument;
+    DeliveryAddress?: any;
     Client?: IClient;
 }

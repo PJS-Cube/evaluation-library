@@ -11,6 +11,7 @@ export interface IContact {
     RepresentativeDetails?: IRepresentativeDetails;
     ContactKinds?: IContactKind[];
     Industries?: IIndustry[];
+    Representatives?: IRepresentative[];
     Promoter?: IRepresentative;
     Seller?: IRepresentative;
 }
