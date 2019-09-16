@@ -16,6 +16,7 @@ export interface IBaseDocumentSales {
     TotalOther?: number;
     TotalHours?: number;
     Representative?: IRepresentative;
+    Representatives?: IRepresentative[];
     DeliveryAddressID?: string;
     CostCenterExternal?: string;
     CalculationKind?: number;
