@@ -1,4 +1,5 @@
 import { IBaseDocumentSales } from "./base.document.sales";
+import { IRepresentative } from "./representative";
 export interface IOfferDocument {
     Oid?: string;
     OfferStatus?: boolean;
@@ -10,4 +11,6 @@ export interface IOfferDocument {
     HandOut?: Date;
     HandOutKind?: number;
     WorkingStatus?: number;
+    Promoter?: IRepresentative;
+    Seller?: IRepresentative;
 }
