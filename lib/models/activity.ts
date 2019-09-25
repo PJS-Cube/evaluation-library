@@ -26,4 +26,5 @@ export interface IActivity extends BaseInterface {
   RescheduledEndOn?: Date;
   RescheduledStartOnTime?: Date; // time only
   RescheduledEndOnTime?: Date; // time only
+  AppointmentType?: string;
 }
