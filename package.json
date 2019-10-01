@@ -2,7 +2,7 @@
   "name": "evaluation-library",
   "version": "0.0.1",
   "description": "Definition of all models used in the evaluation project",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "Herbert Hart",
   "license": "MIT",
   "scripts": {
