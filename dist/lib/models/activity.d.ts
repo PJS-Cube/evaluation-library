@@ -13,7 +13,6 @@ export interface IActivity extends BaseInterface {
     Duration?: number;
     Status?: number;
     Subject?: string;
-    Contact?: IContact;
     Project?: IProject;
     ActivityType?: IActivityType;
     ActivityStatus?: number;
@@ -24,4 +23,6 @@ export interface IActivity extends BaseInterface {
     RescheduledEndOn?: Date;
     RescheduledStartOnTime?: Date;
     RescheduledEndOnTime?: Date;
+    AppointmentType?: string;
+    ActivityContact?: IContact;
 }

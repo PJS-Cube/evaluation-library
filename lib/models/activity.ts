@@ -15,7 +15,6 @@ export interface IActivity extends BaseInterface {
   Status?: number; // todo enum
   Subject?: string;
   // Type?: number
-  Contact?: IContact;
   Project?: IProject;
   ActivityType?: IActivityType;
   ActivityStatus?: number;
@@ -27,4 +26,5 @@ export interface IActivity extends BaseInterface {
   RescheduledStartOnTime?: Date; // time only
   RescheduledEndOnTime?: Date; // time only
   AppointmentType?: string;
+  ActivityContact?: IContact;
 }
