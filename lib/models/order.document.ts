@@ -1,4 +1,5 @@
 import {IContact} from "./contact";
+import {ISalesLineItem} from "./sales.line.item";
 
 export interface IOrderDocumentBase {
   Oid?: string;
@@ -11,6 +12,7 @@ export interface IOrderDocumentBase {
   // OrderDocumentStatus?: any; // is ref
   SyncToFink?: boolean;
   FinkID?: number;
+  SalesLineItems?: ISalesLineItem[];
 }
 
 export interface IOrderDocument {

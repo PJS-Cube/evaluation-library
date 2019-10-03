@@ -1,4 +1,5 @@
 import { IContact } from "./contact";
+import { ISalesLineItem } from "./sales.line.item";
 export interface IOrderDocumentBase {
     Oid?: string;
     InvoicingInfo?: number;
@@ -8,6 +9,7 @@ export interface IOrderDocumentBase {
     InvoiceToAddress?: string;
     SyncToFink?: boolean;
     FinkID?: number;
+    SalesLineItems?: ISalesLineItem[];
 }
 export interface IOrderDocument {
     Oid?: string;
