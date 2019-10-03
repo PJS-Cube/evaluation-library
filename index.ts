@@ -14,4 +14,6 @@ export {IUser} from './lib/models/user';
 export {IOrderDocument, IOrderDocumentBase} from "./lib/models/order.document";
 export {IActivity} from "./lib/models/activity";
 export {IActivityType} from "./lib/models/activity.type";
-
+export {IArticle} from "./lib/models/article";
+export {IArticleBase} from "./lib/models/article.base";
+export {ISalesLineItem} from "./lib/models/sales.line.item";
