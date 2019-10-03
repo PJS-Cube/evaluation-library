@@ -1,8 +1,9 @@
-import {IArticle} from "./article";
+import {IOrderDocumentBase} from "./order.document";
+import {IArticleBase} from "./article.base";
 
 export interface ISalesLineItem {
   Oid?: string;
-  Article?: IArticle;
+  ArticleBase?: IArticleBase;
   Unity?: any; //IUnity;
   Quantity?: number;
   QuantityDelivery?: number;
@@ -14,6 +15,6 @@ export interface ISalesLineItem {
   Weight?: number;
 
   OrderLineItem?: any; // IOrderLineItem
-  OrderDocument?: any; // IOrderDocumentBase;
+  OrderDocumentBase?:  IOrderDocumentBase;
 
 }

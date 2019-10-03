@@ -2,7 +2,7 @@ import {IArticleBase} from "./article.base";
 
 export interface IArticle {
   Oid?: string;
-  BaseArticle?: IArticleBase;
+  ArticleBase?: IArticleBase;
   Note?: string;
   TaresCh?: string;
   TarisEu?: string;

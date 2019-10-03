@@ -2,6 +2,7 @@ import { IBaseDocument } from "./base.document";
 import { IClient } from "./client";
 import { IUser } from "./user";
 import { IRepresentative } from "./representative";
+import { IOrderDocumentBase } from "./order.document";
 export interface IBaseDocumentSales {
     Oid?: string;
     CashDiscountBase?: number;
@@ -36,4 +37,5 @@ export interface IBaseDocumentSales {
     BaseDocument?: IBaseDocument;
     DeliveryAddress?: any;
     Client?: IClient;
+    OrderDocumentBase?: IOrderDocumentBase;
 }
