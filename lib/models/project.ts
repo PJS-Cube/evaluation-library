@@ -2,6 +2,7 @@ import {BaseInterface} from "./base.interface";
 import {IContact} from "./contact";
 import {IDepartment} from "./department";
 import {IAddress} from "./address";
+import {IBaseDocument} from "./base.document";
 
 export interface IProject extends BaseInterface {
   ProjectID?: string;
@@ -29,4 +30,6 @@ export interface IProject extends BaseInterface {
 
   Canceled?: boolean;
   Remember?: Date;
+
+  BaseDocument?: IBaseDocument;
 }
