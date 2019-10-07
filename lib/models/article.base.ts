@@ -1,5 +1,6 @@
 import {BaseInterface} from "./base.interface";
 import {IArticle} from "./article";
+import {IUnity} from "./unity";
 
 export interface IArticleBase extends BaseInterface{
   Number?: string;
@@ -11,5 +12,6 @@ export interface IArticleBase extends BaseInterface{
   CalculationPurchasePrice?: number;
   LastUpdatePurchasePrice?: Date;
   LastPurchaseDateTime?: Date;
+  UnityStockAndDelivery?: IUnity;
   Article?: IArticle;
 }
