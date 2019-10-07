@@ -3,6 +3,7 @@ import {IClient} from "./client";
 import {IUser} from "./user";
 import {IRepresentative} from "./representative";
 import {IOrderDocumentBase} from "./order.document";
+import {IOfferDocument} from "./offer.document";
 
 
 export interface IBaseDocumentSales {
@@ -51,6 +52,6 @@ export interface IBaseDocumentSales {
   DeliveryAddress?: any; // BelongsTo [THIS].[DeliveryAddressID] -> [DeliveryAddress].[Oid]
   Client?: IClient;
 
-  //OfferDocument?: IOfferDocument;
+  OfferDocument?: IOfferDocument;
   OrderDocumentBase?: IOrderDocumentBase;
 }

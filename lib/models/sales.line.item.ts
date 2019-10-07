@@ -13,7 +13,6 @@ export interface ISalesLineItem {
   Total?: number;
   TotalGross?: number;
   Weight?: number;
-
   OrderLineItem?: any; // IOrderLineItem
   OrderDocumentBase?:  IOrderDocumentBase;
 

@@ -10,6 +10,7 @@ export interface IOrderDocumentBase {
     SyncToFink?: boolean;
     FinkID?: number;
     SalesLineItems?: ISalesLineItem[];
+    OrderDocument?: IOrderDocument;
 }
 export interface IOrderDocument {
     Oid?: string;

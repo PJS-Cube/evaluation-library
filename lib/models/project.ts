@@ -32,4 +32,9 @@ export interface IProject extends BaseInterface {
   Remember?: Date;
 
   BaseDocument?: IBaseDocument;
+
+  DesiredAssemblyYearPhotovoltaic?: number;
+  DesiredAssemblyNotePhotovoltaic?: string;
+  DesiredAssemblyYearHeating?: number;
+  DesiredAssemblyNoteHeating?: string;
 }

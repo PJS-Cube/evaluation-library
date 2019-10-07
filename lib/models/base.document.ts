@@ -6,6 +6,7 @@ import {ITaxType} from "./tax.type";
 import {IProject} from "./project";
 import {BaseInterface} from "./base.interface";
 import {IOrderDocumentBase} from "./order.document";
+import {IBaseDocumentSales} from "./base.document.sales";
 
 export enum BaseDocumentStatus {
   Open = 0,
@@ -14,7 +15,6 @@ export enum BaseDocumentStatus {
 }
 
 export interface IBaseDocument extends BaseInterface {
-
   NetAmount?: number;
   VatAmount?:number;
   GrossAmount?:number;
@@ -54,5 +54,6 @@ export interface IBaseDocument extends BaseInterface {
   OrderDocument?: IOrderDocumentBase;
   IsArchived?: boolean;
   IsStatusManual?: boolean;
+  BaseDocumentSales?: IBaseDocumentSales;
 
 }
