@@ -1,4 +1,5 @@
 import { BaseInterface } from "./base.interface";
+import { IArticle } from "./article";
 export interface IArticleBase extends BaseInterface {
     Number?: string;
     NumberAlternativ?: string;
@@ -9,4 +10,5 @@ export interface IArticleBase extends BaseInterface {
     CalculationPurchasePrice?: number;
     LastUpdatePurchasePrice?: Date;
     LastPurchaseDateTime?: Date;
+    Article?: IArticle;
 }
