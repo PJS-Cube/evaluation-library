@@ -18,3 +18,4 @@ export { IArticle } from "./lib/models/article";
 export { IArticleBase } from "./lib/models/article.base";
 export { ISalesLineItem } from "./lib/models/sales.line.item";
 export { IUnity } from "./lib/models/unity";
+export { IProject } from "./lib/models/project";
