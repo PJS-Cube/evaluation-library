@@ -11,6 +11,6 @@ export interface IArticleBase extends BaseInterface {
     CalculationPurchasePrice?: number;
     LastUpdatePurchasePrice?: Date;
     LastPurchaseDateTime?: Date;
-    UnityStockAndDelivery?: IUnity;
+    Unity?: IUnity;
     Article?: IArticle;
 }
