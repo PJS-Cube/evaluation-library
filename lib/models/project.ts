@@ -33,6 +33,13 @@ export interface IProject extends BaseInterface {
 
   BaseDocument?: IBaseDocument;
 
+  SignedContractPV?: Date;
+  SignedContractH?: Date;
+  CanceledOnPV?: Date; // Storniert am
+  HasCanceledAfterDeadlinePV?: boolean; // ob ausserhalb der Stornofrist
+  CanceledOnH?: Date; // Storniert am
+  HasCanceledAfterDeadlineH?: boolean; // ob ausserhalb der Stornofrist
+
   DesiredAssemblyYearPhotovoltaic?: number;
   DesiredAssemblyNotePhotovoltaic?: string;
   DesiredAssemblyYearHeating?: number;

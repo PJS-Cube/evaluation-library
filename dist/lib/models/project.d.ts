@@ -24,6 +24,12 @@ export interface IProject extends BaseInterface {
     Canceled?: boolean;
     Remember?: Date;
     BaseDocument?: IBaseDocument;
+    SignedContractPV?: Date;
+    SignedContractH?: Date;
+    CanceledOnPV?: Date;
+    HasCanceledAfterDeadlinePV?: boolean;
+    CanceledOnH?: Date;
+    HasCanceledAfterDeadlineH?: boolean;
     DesiredAssemblyYearPhotovoltaic?: number;
     DesiredAssemblyNotePhotovoltaic?: string;
     DesiredAssemblyYearHeating?: number;
