@@ -1,9 +1,10 @@
 import { IOrderDocumentBase } from "./order.document";
 import { IArticleBase } from "./article.base";
+import { IUnity } from "./unity";
 export interface ISalesLineItem {
     Oid?: string;
     ArticleBase?: IArticleBase;
-    Unity?: any;
+    Unity?: IUnity;
     Quantity?: number;
     QuantityDelivery?: number;
     DateDelivery?: Date;
