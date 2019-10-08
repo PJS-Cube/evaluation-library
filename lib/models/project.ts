@@ -3,9 +3,12 @@ import {IContact} from "./contact";
 import {IDepartment} from "./department";
 import {IAddress} from "./address";
 import {IBaseDocument} from "./base.document";
+import {IUser} from "./user";
+import {IClient} from "./client";
 
 export interface IProject extends BaseInterface {
   ProjectID?: string;
+  ProjectKind?: IProjectKind;
   Name?: string;
   // todo create enum for Status
   Status?: number;
@@ -44,4 +47,15 @@ export interface IProject extends BaseInterface {
   DesiredAssemblyNotePhotovoltaic?: string;
   DesiredAssemblyYearHeating?: number;
   DesiredAssemblyNoteHeating?: string;
+}
+
+
+export interface IProjectKind {
+  Oid?: string;
+  Name?: string;
+  CreatedOn?: Date;
+  ModifiedOn?: Date;
+  CreatedBy?: IUser;
+  ModifiedBy?: IUser;
+  Client?: IClient;
 }
