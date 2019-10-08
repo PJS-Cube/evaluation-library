@@ -1,9 +1,14 @@
-import {BaseInterface} from "./base.interface";
 import {IClient} from "./client";
 import {ICountry} from "./country";
 import {IProvince} from "./province";
+import {IUser} from "./user";
 
-export interface IAddress extends BaseInterface{
+export interface IAddress {
+  Oid?: string;
+  CreatedOn?: Date;
+  ModifiedOn?: Date;
+  CreatedBy?: IUser;
+  ModifiedBy?: IUser;
   Client?: IClient;
   Country?: ICountry;
   Province?: IProvince;
