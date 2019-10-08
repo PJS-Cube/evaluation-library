@@ -8,7 +8,7 @@ import {IClient} from "./client";
 
 export interface IProject extends BaseInterface {
   ProjectID?: string;
-  ProjectKind?: IProjectKind;
+  Kind?: IProjectKind;
   Name?: string;
   // todo create enum for Status
   Status?: number;

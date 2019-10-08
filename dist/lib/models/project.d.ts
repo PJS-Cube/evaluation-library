@@ -7,7 +7,7 @@ import { IUser } from "./user";
 import { IClient } from "./client";
 export interface IProject extends BaseInterface {
     ProjectID?: string;
-    ProjectKind?: IProjectKind;
+    Kind?: IProjectKind;
     Name?: string;
     Status?: number;
     Contact?: IContact;
