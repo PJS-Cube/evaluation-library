@@ -1,4 +1,5 @@
 import {IClient} from "./client";
+import {IAddress} from "./address";
 
 export interface IPerson {
 
@@ -8,11 +9,10 @@ export interface IPerson {
   Client?: IClient;
   FirstName?: string;
   LastName?: string;
-
   CompanyName?: string;
   Email?: string;
   Notes?: string;
   HomePage?: string;
-
   DisplayName?: string;
+  Address?: IAddress;
 }
