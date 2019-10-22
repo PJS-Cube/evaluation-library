@@ -26,7 +26,7 @@ export interface IProject extends BaseInterface {
     ProcessStateHeating?: string;
     Canceled?: boolean;
     Remember?: Date;
-    BaseDocument?: IBaseDocument;
+    BaseDocuments?: IBaseDocument[];
     SignedContractPV?: Date;
     SignedContractH?: Date;
     CanceledOnPV?: Date;
