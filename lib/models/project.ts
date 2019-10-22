@@ -34,7 +34,8 @@ export interface IProject extends BaseInterface {
   Canceled?: boolean;
   Remember?: Date;
 
-  BaseDocument?: IBaseDocument;
+  // BaseDocument?: IBaseDocument;
+  BaseDocuments?: IBaseDocument[];
 
   SignedContractPV?: Date;
   SignedContractH?: Date;
