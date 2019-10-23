@@ -7,6 +7,7 @@ import { IProject } from "./project";
 import { BaseInterface } from "./base.interface";
 import { IOrderDocumentBase } from "./order.document";
 import { IBaseDocumentSales } from "./base.document.sales";
+import { ILineItemBase } from "./line.item.base";
 export declare enum BaseDocumentStatus {
     Open = 0,
     Done = 1,
@@ -48,4 +49,5 @@ export interface IBaseDocument extends BaseInterface {
     IsArchived?: boolean;
     IsStatusManual?: boolean;
     BaseDocumentSales?: IBaseDocumentSales;
+    LineItemBases?: ILineItemBase[];
 }

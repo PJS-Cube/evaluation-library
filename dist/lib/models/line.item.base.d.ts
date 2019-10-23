@@ -1,6 +1,7 @@
 import { IUser } from "./user";
 import { IClient } from "./client";
 import { IBaseDocument } from "./base.document";
+import { ISalesLineItem } from "./sales.line.item";
 export interface ILineItemBase {
     Oid?: string;
     CreatedOn?: Date;
@@ -12,4 +13,5 @@ export interface ILineItemBase {
     Text?: string;
     LongText?: string;
     Document?: IBaseDocument;
+    SalesLineItem?: ISalesLineItem;
 }
