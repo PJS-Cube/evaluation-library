@@ -11,10 +11,7 @@ export { IPerson } from './lib/models/person';
 export { IRepresentativeDetails } from './lib/models/representative.details';
 export { IRepresentative } from './lib/models/representative';
 export { IUser } from './lib/models/user';
-export {
-  IOrderDocument,
-  IOrderDocumentBase,
-} from './lib/models/order.document';
+export { IOrderDocument, IOrderDocumentBase, } from './lib/models/order.document';
 export { IActivity } from './lib/models/activity';
 export { IActivityType } from './lib/models/activity.type';
 export { IArticle } from './lib/models/article';
@@ -25,11 +22,6 @@ export { IProject, IProjectKind } from './lib/models/project';
 export { ILineItemBase } from './lib/models/line.item.base';
 export { ICommission } from './lib/evaluation-db-models/commission';
 export { IEmployee } from './lib/evaluation-db-models/employee';
-export {
-  ICommissionHistoryEntry,
-  CommissionHistoryEntryType,
-} from './lib/evaluation-db-models/commission-history-entry';
-export {
-  ICommissionHistoryBlock,
-} from './lib/evaluation-db-models/commission-history-block';
+export { ICommissionHistoryEntry, CommissionHistoryEntryType, } from './lib/evaluation-db-models/commission-history-entry';
+export { ICommissionHistoryBlock, } from './lib/evaluation-db-models/commission-history-block';
 export { IProduct } from './lib/evaluation-db-models/product';

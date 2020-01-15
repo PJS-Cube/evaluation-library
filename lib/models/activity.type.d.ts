@@ -1,6 +1,6 @@
-import { BaseInterface } from './base.interface';
+import { BaseInterface } from "./base.interface";
 export interface IActivityType extends BaseInterface {
-  Code?: string;
-  Name?: string;
-  IsAppointment?: boolean;
+    Code?: string;
+    Name?: string;
+    IsAppointment?: boolean;
 }

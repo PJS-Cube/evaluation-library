@@ -1,4 +1,4 @@
 export declare type LinkedMixin<T = any> = {
-  nextItem?: T;
-  previousItem?: T;
+    nextItem?: T;
+    previousItem?: T;
 };

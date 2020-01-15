@@ -1,3 +1,3 @@
 export interface IRepresentativeDetails {
-  Oid?: string;
+    Oid?: string;
 }

@@ -1,3 +1,3 @@
 export declare type IActiveMixin = {
-  isActive?: boolean;
+    isActive?: boolean;
 };
