@@ -1,4 +1,4 @@
 export interface IClient {
-    Oid?: string;
-    Name?: string;
+  Oid?: string;
+  Name?: string;
 }
